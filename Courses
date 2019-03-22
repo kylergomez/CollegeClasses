@@ -1,0 +1,34 @@
+public class Course
+{
+//The variables that are used in the project
+    private String Course;
+    private int CreditHours;
+    private char Grade;
+// all methods that are ued in project 
+    public String getCourse()
+    {
+        return this.Course;
+    }
+
+    public void setCourse(String ID){
+        this.Course = ID;
+    }
+
+    public void setCreditHours(int cr){
+        this.CreditHours = cr;
+    }
+
+    public int getCreditHours(){
+        return this.CreditHours;
+    }
+
+    public void setGrade(char gr){
+        this.Grade = gr;
+    }
+
+    public char getGrade(){
+        return this.Grade;
+    }
+
+    
+}
