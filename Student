@@ -1,0 +1,30 @@
+public class Student
+{
+   Course[] course= new Course[3];
+    private int StuNum;
+   
+  //  
+    Student(){
+        for (int i = 0; i < course.length; i++){
+            //this.stud[i]=new Course();
+            this.course[i]=new Course();
+        }
+    }
+// all methods that are ued in project 
+    public void setCourse(String id, int index) {this.course[index].setCourse(id);}
+
+    public Course getcourses(int index) { return this.course[index];}
+
+    public void setStudentNum(int stu) { this.StuNum=stu;}
+
+    public int getStudentNum() {return this.StuNum;} 
+    
+    public void setCreditHours(int cr, int index){this.course[index].setCreditHours(cr);}
+    
+    public Course getCredit(int index) {return this.course[index];}
+    
+    public void setGrade(char gr,int index) {this.course[index].setGrade(gr);} 
+    
+    public Course getGrade(int index){return this.course[index];}
+    
+}
